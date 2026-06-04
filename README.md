@@ -40,7 +40,12 @@ This project's success is built upon a robust stack of industry-standard Python 
 
 **Statsmodels:** Utilized for advanced statistical analysis and model evaluation.
 
+
 ## Key Findings
-- Feature X had the strongest correlation with price (r = 0.XX)
-- Regression model achieved RMSE of XX,XXX EUR on test set
-- Properties in [neighborhood] showed XX% higher price per sqft vs city average
+- sqft_total and grade showed strongest correlation with price
+- Linear Regression model achieved R² = 0.47 on test set,
+  explaining 47% of price variance
+- price_per_sqft feature engineered to enable standardized 
+  property comparison across Berlin neighborhoods
+- Dataset: ~10,000 Berlin housing records, cleaned from 
+  duplicates and outliers using IQR method
