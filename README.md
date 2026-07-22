@@ -1,4 +1,4 @@
-# 🏠 Berlin Housing Market Analysis
+#  Berlin Housing Market Analysis
 
 An end-to-end data analysis and machine learning project that explores the Berlin housing market and develops a predictive model for estimating residential property prices.
 
@@ -123,20 +123,6 @@ Example:
 ![Correlation Heatmap](images/correlation_heatmap.png)
 
 ![Price Distribution](images/price_distribution.png)
-
----
-
-## 📁 Repository Structure
-
-```
-Berlin-Housing-Market/
-│
-├── Berlin Housing Market.ipynb
-├── BerlinHousing4049.csv
-├── images/
-├── README.md
-└── requirements.txt
-```
 
 ---
 
