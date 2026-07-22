@@ -49,7 +49,7 @@ The Linear Regression model achieved:
 - Log transformation improved the distribution of the target variable.
 - Removing outliers improved model stability.
 
-  ## Future Improvements
+## Future Improvements
 
 - Compare multiple regression algorithms
 - Hyperparameter tuning
