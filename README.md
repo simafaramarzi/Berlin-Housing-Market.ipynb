@@ -2,9 +2,24 @@
 
 A regression analysis of Berlin real estate listings to identify which factors most influence property prices, and to build a predictive pricing model.
 
+## Project Overview
+
+This project analyzes Berlin housing listings to understand the factors influencing property prices and develops a machine learning model capable of estimating property values based on property characteristics.
+
+The project covers the complete data analysis workflow, including data cleaning, exploratory data analysis (EDA), feature engineering, predictive modeling, and visualization.
+
+## Business Objective
+
+The objective is to help real estate professionals and potential buyers better understand pricing patterns within the Berlin housing market and identify the most influential property characteristics affecting price.
+
 ## Result
 
-Linear regression model: **R² = 0.47** — explaining about 47% of the variance in property prices based on the available features.
+The Linear Regression model achieved:
+
+- R² Score: 0.47
+- The model explains approximately 47% of the variance in housing prices.
+- Results indicate that property size, number of bedrooms, and location-related variables contribute significantly to price prediction.
+
 
 ## What I Did
 
@@ -27,6 +42,21 @@ Linear regression model: **R² = 0.47** — explaining about 47% of the variance
    - Built a linear regression model to predict property price
    - Evaluated performance with R² and residual analysis
 
+## Key Insights
+
+- Larger properties generally command higher prices.
+- Property size is the strongest predictor of price.
+- Log transformation improved the distribution of the target variable.
+- Removing outliers improved model stability.
+
+  ## Future Improvements
+
+- Compare multiple regression algorithms
+- Hyperparameter tuning
+- Cross-validation
+- Feature selection
+- Deploy the model using Streamlit
+  
 ## How to Run
 
 ```bash
