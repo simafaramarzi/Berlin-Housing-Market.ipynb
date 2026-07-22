@@ -1,51 +1,188 @@
-# Berlin Housing Market Analysis
+# 🏠 Berlin Housing Market Analysis
 
-A regression analysis of Berlin real estate listings to identify which factors most influence property prices, and to build a predictive pricing model.
+An end-to-end data analysis and machine learning project that explores the Berlin housing market and develops a predictive model for estimating residential property prices.
 
-## Project Overview
+---
 
-This project analyzes Berlin housing listings to understand the factors influencing property prices and develops a machine learning model capable of estimating property values based on property characteristics.
+## 📌 Project Overview
 
-The project covers the complete data analysis workflow, including data cleaning, exploratory data analysis (EDA), feature engineering, predictive modeling, and visualization.
+Understanding the factors that influence housing prices is essential for buyers, sellers, investors, and real estate professionals.
 
-## Business Objective
+This project analyzes residential property listings in Berlin to identify the key drivers of property prices through exploratory data analysis (EDA), feature engineering, and predictive modeling.
 
-The objective is to help real estate professionals and potential buyers better understand pricing patterns within the Berlin housing market and identify the most influential property characteristics affecting price.
+The complete workflow includes:
 
-## Result
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Feature Engineering
+- Regression Modeling
+- Model Evaluation
 
-The Linear Regression model achieved:
+---
 
-- R² Score: 0.47
-- The model explains approximately 47% of the variance in housing prices.
-- Results indicate that property size, number of bedrooms, and location-related variables contribute significantly to price prediction.
+## 🎯 Business Objective
 
+The objective of this project is to:
 
-## What I Did
+- Understand pricing patterns in the Berlin housing market
+- Identify the most influential property characteristics
+- Build a machine learning model capable of estimating house prices
+- Demonstrate a complete data analysis workflow from raw data to business insights
 
-1. **Data Cleaning**
-   - Imputed missing values using the median to preserve distribution integrity
-   - Removed duplicate entries
-   - Converted year fields to datetime for time-based analysis
-   - Removed statistical outliers in the price column using the IQR method
+---
 
-2. **Feature Engineering**
-   - Created `price_per_sqft` as a standardized value metric for comparing properties
-   - Scaled numerical features with `StandardScaler` to prepare for modeling
+## 📂 Dataset
 
-3. **Exploratory Analysis**
-   - Log-transformed price distribution to correct for skew
-   - Scatter plots of price vs. bedrooms, square footage, and other features
-   - Correlation heatmap across all numerical variables
+**Dataset:** BerlinHousing4049.csv
 
-4. **Modeling**
-   - Built a linear regression model to predict property price
-   - Evaluated performance with R² and residual analysis
+The dataset contains residential property listings with features such as:
 
-## Key Insights
+- Property Price
+- Living Area
+- Number of Bedrooms
+- Construction Year
+- Property Characteristics
 
-- Larger properties generally command higher prices.
+---
+
+## 🛠 Technologies
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+- Statsmodels
+- Jupyter Notebook
+
+---
+
+## 🔧 Data Cleaning
+
+The following preprocessing steps were performed:
+
+- Removed duplicate records
+- Imputed missing values using the median
+- Converted year-related columns into datetime format
+- Removed price outliers using the Interquartile Range (IQR) method
+
+---
+
+## ⚙️ Feature Engineering
+
+To improve model performance:
+
+- Created a **Price per Square Foot** feature
+- Standardized numerical variables using **StandardScaler**
+
+---
+
+## 📊 Exploratory Data Analysis
+
+The analysis included:
+
+- Price distribution analysis
+- Log transformation of the target variable
+- Correlation heatmap
+- Scatter plots
+- Distribution analysis of numerical variables
+
+---
+
+## 🤖 Machine Learning
+
+A Linear Regression model was developed to predict property prices.
+
+### Model Performance
+
+| Metric | Result |
+|---------|--------|
+| R² Score | **0.47** |
+
+The model explains approximately **47% of the variance** in housing prices using the available property features.
+
+---
+
+## 💡 Key Insights
+
 - Property size is the strongest predictor of price.
+- Larger homes generally command higher prices.
+- Log transformation reduced skewness and improved data distribution.
+- Removing extreme outliers increased model stability.
+- Several property characteristics show moderate correlations with price, indicating that additional location-based features could further improve prediction accuracy.
+
+---
+
+## 📸 Project Preview
+
+*(Add screenshots here)*
+
+Example:
+
+![Correlation Heatmap](images/correlation_heatmap.png)
+
+![Price Distribution](images/price_distribution.png)
+
+---
+
+## 📁 Repository Structure
+
+```
+Berlin-Housing-Market/
+│
+├── Berlin Housing Market.ipynb
+├── BerlinHousing4049.csv
+├── images/
+├── README.md
+└── requirements.txt
+```
+
+---
+
+## 🚀 How to Run
+
+Clone the repository
+
+```bash
+git clone https://github.com/yourusername/Berlin-Housing-Market.git
+```
+
+Install dependencies
+
+```bash
+pip install pandas numpy matplotlib seaborn scikit-learn statsmodels
+```
+
+Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Open
+
+```
+Berlin Housing Market.ipynb
+```
+
+---
+
+## 🔮 Future Improvements
+
+- Compare multiple regression algorithms (Random Forest, XGBoost)
+- Perform hyperparameter tuning
+- Apply cross-validation
+- Incorporate location-based features
+- Deploy the model as an interactive web application using Streamlit
+
+---
+
+## 👤 Author
+
+**Sima Faramarzi**
+
+M.Sc. Data Science | Python | SQL | Machine Learning | Data Analytics- Property size is the strongest predictor of price.
 - Log transformation improved the distribution of the target variable.
 - Removing outliers improved model stability.
 
