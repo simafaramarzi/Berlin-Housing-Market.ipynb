@@ -114,18 +114,6 @@ The model explains approximately **47% of the variance** in housing prices using
 
 ---
 
-## 📸 Project Preview
-
-*(Add screenshots here)*
-
-Example:
-
-![Correlation Heatmap](images/correlation_heatmap.png)
-
-![Price Distribution](images/price_distribution.png)
-
----
-
 ## 🚀 How to Run
 
 Clone the repository
